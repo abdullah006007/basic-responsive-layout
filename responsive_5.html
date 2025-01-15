@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive_5</title>
+    <style>
+        .container-one{
+            height: 480px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            border: 1px solid black;
+            padding: 8px;
+            gap: 10px;
+            margin-bottom: 30px;
+        
+           
+        }
+
+        .container-two{
+            height: 480px;
+            display: flex;
+            flex-direction: row-reverse;
+            width: 100%;
+            border: 1px solid black;
+            padding: 8px;
+            gap: 10px;
+            /* margin: auto; */
+            align-items: center;
+
+        }
+
+        .text-side-first{
+            align-items: center;
+            
+        }
+
+        .img-one{
+            width: 20%;
+        }
+
+        .img-two{
+            width: 20%;
+        }
+
+
+    
+    
+    
+    
+        /* media query side */
+
+        @media screen and (max-width: 576px) {
+
+            .container-one{
+            width: 450px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid black;
+            gap: 10px;
+            
+
+
+            
+        }
+
+        .text-side-first{
+            padding: 20px;
+
+        }
+        .container-two{
+            width: 450px;
+            height: px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid black;
+            padding: 8px;
+            gap: 10px;
+
+
+        }
+        .img-one{
+            width: 450px;
+            height: 180px;
+            
+        }
+        .img-two{
+            width: 450px;
+            height: 180px;
+        }
+
+          
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container-one">
+            <img class="img-one" src="/copen.jpg" alt="">
+            <div class="text-side-first">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p class="para-one">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates alias in consequuntur ad sit dignissimos excepturi quidem molestiae provident maxime.</p><br>
+
+                <p class="para-one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro suscipit quas aliquid consectetur rem repudiandae quaerat, molestiae et magnam maiores!</p>
+            </div>
+
+        </div>
+
+        
+
+        <div class="container-two">
+            <img class="img-two" src="/copen.jpg" alt="">
+            <div class="text-side-first">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates alias in consequuntur ad sit dignissimos excepturi quidem molestiae provident maxime.</p><br>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro suscipit quas aliquid consectetur rem repudiandae quaerat, molestiae et magnam maiores!</p>
+            </div>
+
+        </div>
+
+        
+
+    </section>
+    
+</body>
+</html>
