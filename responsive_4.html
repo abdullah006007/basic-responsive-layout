@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Responsive</title>
+    <style>
+
+
+        /* container */
+
+        .first-block{
+            height: 250px;
+            width: 720px;
+            display: flex;
+            border: 1px solid black;
+            /* text-align: center; */
+            gap: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            margin: auto;
+            margin-top: 100px;
+            
+
+        }
+
+        .this-second-block{
+            height: 250px;
+            width: 720px;
+            display: flex;
+            border: 1px solid black;
+            /* text-align: center; */
+            gap: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            margin: auto;
+            margin-top: 10px;
+
+
+        }
+
+
+        h2 {
+            font-size: 2em;
+            }
+
+
+
+
+        /* image side */
+        
+
+        .img-main{
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        button{
+            padding: 6px;
+            background-color: rgb(252, 107, 16);
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+
+        /* Responsive part */
+
+        @media screen and (max-width:576px){
+            .first-block{
+            height: 720px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            /* text-align: center; */
+            gap: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            margin: auto;
+            margin-top: 10px;
+            text-align: center;
+
+
+        }
+
+        .this-second-block{
+            height: 720px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            /* text-align: center; */
+            gap: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            margin: auto;
+            margin-top: 10px;
+
+            text-align: center;
+
+        }
+
+        }
+  
+
+
+
+    </style>
+</head>
+
+
+<body>
+
+    <section class="mega-container">
+        <div class="first-block">
+            <img class="img-main" src="./1st.jpeg" alt="">
+            <div>
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni perspiciatis nam dolore in maxime ipsam explicabo repellat reprehenderit sunt quam a sit recusandae libero enim fuga iste, quos vel ipsa id earum rerum non repudiandae adipisci commodi.</p>
+                <button>Buy Now</button>
+               
+
+            </div>
+        </div>
+
+        <div class="this-second-block">
+            <img class="img-main" src="/1st.jpeg" alt="">
+            <div>
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni perspiciatis nam dolore in maxime ipsam explicabo repellat reprehenderit sunt quam a sit recusandae libero enim fuga iste, quos vel ipsa id earum rerum non repudiandae adipisci commodi.</p>
+                <button>Buy Now</button>
+               
+
+            </div>
+
+
+        </div>
+
+    </section>
+    
+</body>
+</html>
